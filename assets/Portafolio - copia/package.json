@@ -1,0 +1,20 @@
+{
+  "name": "tailwindcssbasics",
+  "version": "1.0.0",
+  "description": "Es un proyecto de practica para el curso 24",
+  "main": "index.js",
+  "scripts": {
+    "build:styles": "npx @tailwindcss/cli -i input.css -o output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "tailwindcss": "^4.1.13"
+  },
+  "devDependencies": {
+    "tailwind-scrollbar": "^4.0.2"
+  }
+}

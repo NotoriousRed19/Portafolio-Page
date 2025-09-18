@@ -1,0 +1,287 @@
+$fuente-principal: 'Roboto', sans-serif
+$color-principal: #121212
+$color-secundario: #000000ee
+$color-terciario: rgb(31,31,31)
+$color-texto: #FFFFFF
+$color-texto-secundario: #B3B3B3
+$color-texto-terciario:rgb(179, 179, 179)
+$color-hover: #282828
+$color-hover-secundario:rgba(233, 230, 230, 0.986)
+$color-hover-terciario: rgb(44, 44, 44)
+$color-Input: rgba(179, 179, 179, 0.144)
+$color-Botones: rgba(179, 179, 179, 0.004)
+$fuente-estandar: 16px 
+$fuente-Semi:14px
+$fuente-mediana:13px   
+$fuente-oscura:bold
+
+@mixin display-Flex-center()
+     display: flex
+     place-content: center
+     align-items: center
+
+@mixin display-Flex-sidebar()
+     display: flex
+     place-items: center        
+     flex-direction: column
+     background-color: $color-principal
+
+@mixin size-icons()
+        display: flex
+        width: 26px
+        height: 26px    
+        background-color: $color-principal
+        border: none
+        transition: transform 0.3s ease-in-out
+        border-radius: 50px
+        &:hover
+         transform: scale(1.1)    
+         cursor: pointer
+         
+
+@mixin hover-buttons()
+      &:hover
+        transform: scale(1.1)    
+        cursor: pointer
+
+@mixin button-form()
+     width: 16px
+     height: 16px   
+     border-radius: 50%
+     border: none
+     background-color: $color-principal
+       
+            
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: $fuente-principal
+body
+    background-color: $color-principal
+    color: $color-texto
+    display: flex
+    flex-direction: column
+    height: 100vh
+    width: 100vw
+
+header
+    background-color: $color-secundario
+    color: $color-texto
+    display: flex
+    padding: 8px 8px 8px 8px
+    flex-direction: row
+    .Nav
+     display: flex
+     align-items: center
+     width: 100vw
+     height: 49px
+     gap: 390px
+     &_Logo
+        @include display-Flex-center 
+        width: 72px
+        height: 72px
+        cursor: pointer
+     &_Middle 
+         @include display-Flex-center 
+         width: 547px
+         height: 49px         
+         flex-direction: row
+         gap: 10px
+        
+         &_Home
+            width: 45px
+            height: 45px
+            border-radius: 50px
+            border: none
+            background-color: $color-terciario
+            transition: transform 0.3s ease-in-out
+            &:hover
+                transform: scale(1.1)    
+                background-color: $color-hover-terciario
+                cursor: pointer
+            &_Icon
+                width: 24px
+                height: 24px
+                color: $color-texto-secundario
+              
+    
+    .Search
+        @include display-Flex-center 
+        width: 470px;
+        height: 48px;
+        border-radius: 40px
+        overflow: hidden
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1)
+        background-color: $color-Input
+        &:hover
+                box-shadow: 1px 1px 1px 1px $color-hover-terciario 
+                background-color: $color-hover-terciario               
+        &_Icon
+            @include display-Flex-center 
+            height: 50px
+            width: 50px
+            background-color: $color-Botones
+            border: none
+            overflow: hidden
+            padding-left: 12px
+            padding-right: 12px
+            &_lupa
+                display: flex
+                width: 35px
+                height: 35px
+                cursor: pointer
+        &_SearchBar
+            width: 380px
+            height: 24px
+            border-radius: 40px
+            overflow: hidden
+            border: none   
+            padding: 12px 0px 12px 2px     
+            background-color: $color-Botones
+            font-family: $fuente-principal
+            outline: None
+            font-size: $fuente-estandar
+        &_Explore  
+            @include display-Flex-center  
+            width: 50px
+            height: 50px
+            background-color: $color-Botones
+            border: none
+            overflow: hidden
+            padding-left: 12px
+            padding-right: 12px
+            margin-right: 5px
+            &_Icon
+                display: flex
+                width: 35px
+                height: 35px
+                transition: transform 0.3s ease-in-out
+                @include hover-buttons
+                
+    
+    .Nav_Profile
+            display: flex
+            flex-direction: row
+            width: 477px
+            height: 48px
+    .Container
+            @include display-Flex-center 
+            flex-direction: row
+            gap: 23px
+            &_PremiumBtn
+                @include display-Flex-center 
+                width: 148px
+                height: 32px
+                border-radius:20px
+                border: none
+                padding-right: 10px
+                padding-left: 16px
+                padding-bottom: 4px
+                padding-top: 4px
+                font-size: $fuente-Semi
+                font-family: $fuente-principal
+                font-weight: $fuente-oscura
+                cursor: pointer
+                transition: transform 0.3s ease-in-out
+                &:hover
+                    transform: scale(1.1)
+                    background-color: $color-hover-secundario
+            &_AplicationBtn
+                display: flex
+                width: 170px
+                height: 25px    
+                border-radius: 20px
+                border: none
+                flex-direction: row
+                gap:10px
+                font-family: $fuente-principal
+                font-size: $fuente-mediana
+                font-weight: $fuente-oscura
+                padding: 4px 10px 4px 20px
+                color: $color-texto-secundario
+                background-color: $color-secundario
+                cursor: pointer
+                transition: transform 0.3s ease-in-out
+                &:hover
+                    color: $color-texto
+                    transform: scale(1.1)
+
+            &_NotificationBtn
+                display: flex
+                @include button-form
+                transition: transform 0.3s ease-in-out
+                @include hover-buttons
+            &_FriendsBtn
+                display: flex
+                @include button-form
+                transition: transform 0.3s ease-in-out
+                @include hover-buttons
+            &_ProfileBtn
+                @include display-Flex-center 
+                width: 48px
+                height: 48px    
+                border-radius: 50%
+                overflow: hidden
+                border: none               
+                background-color: $color-terciario
+                transition: transform 0.3s ease-in-out
+                @include hover-buttons
+                &_Icon
+                    width: 32px
+                    height: 32px    
+                    border-radius: 50px
+                  
+            
+main
+    background-color: $color-secundario
+    color: $color-texto
+    display: grid
+    grid-template-columns: 75px 1fr 250px // Sidebar y contenido principal
+    grid-template-rows: 1fr 90px // Header, contenido, footer
+    grid-template-areas: "sidebar left" "sidebar content" "sidebar footer"
+    height: 100vh
+    overflow: hidden
+    .sidebarleft
+      @include display-Flex-sidebar
+      gap: 18px
+      border-radius: 12px
+      margin-left: 5px
+      &_containerfirst
+        @include display-Flex-sidebar
+        gap: 10px
+        &_library
+         @include  size-icons
+         margin-top: 20px
+        &_playlist
+         @include size-icons
+      
+    .container
+      display: flex
+      flex-direction: column
+      border-radius: 12px
+      background-color: $color-principal
+      align-items: center
+      gap: 5px
+      padding-left: 4px
+      padding-right: 4px
+      padding-bottom: 4px
+      &_Songs
+        width: 60px
+        height: 60px
+        overflow: hidden
+        background-color: $color-principal
+        border-radius: 10px
+        border: none
+        place-items: center
+        &:hover
+                background-color: $color-hover-terciario
+                cursor: pointer
+        &_Schedule
+            display: flex
+            width: 48px
+            height: 48px
+            border-radius: 10px
+        
+    //sass --watch Styles.Sass:Styles.css//

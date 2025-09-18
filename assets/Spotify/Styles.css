@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.9333333333);
+  color: #FFFFFF;
+  display: flex;
+  padding: 8px 8px 8px 8px;
+  flex-direction: row;
+}
+header .Nav {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 49px;
+  gap: 390px;
+}
+header .Nav_Logo {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  width: 72px;
+  height: 72px;
+  cursor: pointer;
+}
+header .Nav_Middle {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  width: 547px;
+  height: 49px;
+  flex-direction: row;
+  gap: 10px;
+}
+header .Nav_Middle_Home {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(31, 31, 31);
+  transition: transform 0.3s ease-in-out;
+}
+header .Nav_Middle_Home:hover {
+  transform: scale(1.1);
+  background-color: rgb(44, 44, 44);
+  cursor: pointer;
+}
+header .Nav_Middle_Home_Icon {
+  width: 24px;
+  height: 24px;
+  color: #B3B3B3;
+}
+header .Search {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  width: 470px;
+  height: 48px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(179, 179, 179, 0.144);
+}
+header .Search:hover {
+  box-shadow: 1px 1px 1px 1px rgb(44, 44, 44);
+  background-color: rgb(44, 44, 44);
+}
+header .Search_Icon {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: rgba(179, 179, 179, 0.004);
+  border: none;
+  overflow: hidden;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+header .Search_Icon_lupa {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+header .Search_SearchBar {
+  width: 380px;
+  height: 24px;
+  border-radius: 40px;
+  overflow: hidden;
+  border: none;
+  padding: 12px 0px 12px 2px;
+  background-color: rgba(179, 179, 179, 0.004);
+  font-family: "Roboto", sans-serif;
+  outline: None;
+  font-size: 16px;
+}
+header .Search_Explore {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(179, 179, 179, 0.004);
+  border: none;
+  overflow: hidden;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-right: 5px;
+}
+header .Search_Explore_Icon {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s ease-in-out;
+}
+header .Search_Explore_Icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+header .Nav_Profile {
+  display: flex;
+  flex-direction: row;
+  width: 477px;
+  height: 48px;
+}
+header .Container {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 23px;
+}
+header .Container_PremiumBtn {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  width: 148px;
+  height: 32px;
+  border-radius: 20px;
+  border: none;
+  padding-right: 10px;
+  padding-left: 16px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+header .Container_PremiumBtn:hover {
+  transform: scale(1.1);
+  background-color: rgba(233, 230, 230, 0.986);
+}
+header .Container_AplicationBtn {
+  display: flex;
+  width: 170px;
+  height: 25px;
+  border-radius: 20px;
+  border: none;
+  flex-direction: row;
+  gap: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 4px 10px 4px 20px;
+  color: #B3B3B3;
+  background-color: rgba(0, 0, 0, 0.9333333333);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+header .Container_AplicationBtn:hover {
+  color: #FFFFFF;
+  transform: scale(1.1);
+}
+header .Container_NotificationBtn {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: none;
+  background-color: #121212;
+  transition: transform 0.3s ease-in-out;
+}
+header .Container_NotificationBtn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+header .Container_FriendsBtn {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: none;
+  background-color: #121212;
+  transition: transform 0.3s ease-in-out;
+}
+header .Container_FriendsBtn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+header .Container_ProfileBtn {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: none;
+  background-color: rgb(31, 31, 31);
+  transition: transform 0.3s ease-in-out;
+}
+header .Container_ProfileBtn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+header .Container_ProfileBtn_Icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.9333333333);
+  color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 75px 1fr 250px;
+  grid-template-rows: 1fr 90px;
+  grid-template-areas: "sidebar left" "sidebar content" "sidebar footer";
+  height: 100vh;
+  overflow: hidden;
+}
+main .sidebarleft {
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  background-color: #121212;
+  gap: 18px;
+  border-radius: 12px;
+  margin-left: 5px;
+}
+main .sidebarleft_containerfirst {
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  background-color: #121212;
+  gap: 10px;
+}
+main .sidebarleft_containerfirst_library {
+  display: flex;
+  width: 26px;
+  height: 26px;
+  background-color: #121212;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+main .sidebarleft_containerfirst_library:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+main .sidebarleft_containerfirst_playlist {
+  display: flex;
+  width: 26px;
+  height: 26px;
+  background-color: #121212;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 50px;
+}
+main .sidebarleft_containerfirst_playlist:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: #121212;
+  align-items: center;
+  gap: 5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+}
+main .container_Songs {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  background-color: #121212;
+  border-radius: 10px;
+  border: none;
+  place-items: center;
+}
+main .container_Songs:hover {
+  background-color: rgb(44, 44, 44);
+  cursor: pointer;
+}
+main .container_Songs_Schedule {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=Styles.css.map */

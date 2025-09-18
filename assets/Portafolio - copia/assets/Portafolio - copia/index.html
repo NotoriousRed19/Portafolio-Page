@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en" class="  scrollbar scrollbar-thumb-primario scrollbar-track-darkbg scrollbar-thin ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="output.css" />
+    <script
+      src="https://kit.fontawesome.com/854c96048a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="font-Roboto bg-darkbg text-lighttext leading-[1.6] max-[1470px]:overflow-x-hidden ">
+    <header
+      class="fixed top-0 left-0 w-full bg-darkerbg/90 backdrop-blur-xs border-bordercolor border-b-1 border-solid z-100 max-[500px]:static "
+    >
+      <nav id="navbar" class="flex justify-between items-center p-4 m-0 max-[500px]:flex-col max-[500px]:p-2 max-[500px]:gap-4  ">
+        <div
+          id="logo"
+          class="text-2xl font-bold tracking-tighter animate__animated animate__bounceIn animate__slower"
+        >
+          Mauricio<span class="text-primario">Lopez</span>
+        </div>
+        <ul
+          id="nav-links"
+          class="flex gap-8 animate__animated animate__bounceIn animate__slower"
+        >
+          <li>
+            <a id="link" class="relative p-2 hover-link" href="Inicio"
+              >Inicio</a
+            >
+          </li>
+          <li>
+            <a class="relative p-2 hover-link" href="Experiencia"
+              >Experiencia</a
+            >
+          </li>
+          <li>
+            <a class="relative p-2 hover-link" href="Proyectos">Proyectos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero" class="sections">
+        <div
+          id="hero-content"
+          class="min-h-screen flex items-center gap-16 max-md:flex-col"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <div id="hero-text" class="flex-1">
+            <h1 class="text-5xl mb-[0.5rem] font-bold">Mauricio Lopez</h1>
+            <h2 class="text-2xl text-primario mb-[1.5rem] font-">
+              Desarrollador Web Junior
+            </h2>
+            <p class="text-lg mb-[1.5rem] text-graytext">
+              Apasionado por crear experiencias web unicas y funcionales siempre
+              buscando aprender nuevas tecnologias y mejorar habilidades.
+            </p>
+            <div id="social-links" class="flex gap-4 mb-8">
+              <a href="a" target="_blank" class="hover-socials"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="a" target="_blank" class="hover-socials"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="a" target="_blank" class="hover-socials"
+                ><i class="fab fa-x"></i
+              ></a>
+              <a href="a" target="_blank" class="hover-socials"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="#Contactame" class="boton transition hover-cards"
+              >Contactame</a
+            >
+          </div>
+          <div id="hero-image" class="block max-w-full h-auto">
+            <img
+              class="w-[350px] h-[350px] object-cover rounded-[50%] border-4 border-primario shadow-green-800 shadow-[0_0_25px_rgba(0,0,0,0.25)] p-4 border-solid hover:scale-[1.03] transition :"
+              src="assets/Spiderman.jpg"
+              alt="profile-image"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="sobre-mi" class="sections">
+        <h2
+          id="Title"
+          class="text-3xl mb-12 text-center relative pb-4 title-decoration"
+        >
+          Informacion personal
+        </h2>
+        <div
+          id="timeline"
+          class="experience-cards"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
+          <h1 class="text-5xl mb-[0.5rem] font-bold">Mauricio Lopez</h1>
+          <h2 class="text-2xl text-primario mb-[1.5rem] font-">
+            Desarrollador Web
+          </h2>
+          <p class="text-lg mb-[1.5rem] text-lighttext">
+            Quizas quieras saber un poco sobre mi!, esta bien te dejare un poco
+            de mi informacion aca abajo
+          </p>
+          <span
+            id="Date"
+            class="relative hover-link text-sm font-semibold mb-3 hover-link inline-block p-1.5 bg-primario/10 text-primario/80 rounded-[5px]"
+            >¿ Cual es mi nombre ?
+          </span>
+          <h3 class="text-graytext items-center text-base font-medium mb-3">
+            <span
+              class="tech border-2 border-primario border-solid hover-cards"
+            >
+              Mauricio Jose Lopez
+            </span>
+          </h3>
+          <span
+            id="Date"
+            class="relative hover-link text-sm font-semibold mb-3 hover-link inline-block p-1.5 bg-primario/10 text-primario/80 rounded-[5px]"
+            >¿ Cual es mi edad ?</span
+          >
+          <h3 class="text-graytext mb-3 text-base font-medium">
+            <span class="tech border-2 border-primario border-solid hover-cards"
+              >Nacido el 06/09/2002, 23 años</span
+            >
+          </h3>
+          <span
+            id="Date"
+            class="relative hover-link text-sm font-semibold mb-3 hover-link inline-block p-1.5 bg-primario/10 text-primario/80 rounded-[5px]"
+            >¿ Cual es mi profesion ?</span
+          >
+          <h3 class="text-graytext mb-3 text-base font-medium">
+            <span class="tech border-2 border-primario border-solid hover-cards"
+              >Desarrollador FullStack</span
+            >
+          </h3>
+          <span
+            id="Date"
+            class="relative hover-link text-sm font-semibold mb-3 hover-link inline-block p-1.5 bg-primario/10 text-primario/80 rounded-[5px]"
+            >¿ De donde soy ?</span
+          >
+          <h3 class="text-graytext mb-3 text-base font-medium">
+            <span class="tech border-2 border-primario border-solid hover-cards"
+              >Venezuela</span
+            >
+          </h3>
+          <span
+            id="Date"
+            class="relative hover-link text-sm font-semibold mb-3 hover-link inline-block p-1.5 bg-primario/10 text-primario/80 rounded-[5px]"
+          >
+            Un poco sobre mi</span
+          >
+          <p
+            class="text-graytext mb-3 text-base font-medium tech border-2 border-primario border-solid hover-cards"
+          >
+            Como sabras soy un desarrolador Fullstack con más de 3 años de
+            experiencia en el área , apasionado por crear experiencias web
+            unicas y funcionales siempre buscando aprender nuevas tecnologias y
+            mejorar, Desde hace un par de años trabajo de forma remota para
+            clientes internacionales, encargándome diseñar, desarrollar y
+            mantener el ciclo de vida completo de aplicaciónes,paginas, etc,
+            gestionando la comunicación entre el usuario y la infraestructura
+            tecnológica para crear soluciones integrales. Para ello, utilizo
+            diferentes herramientas,como lenguajes de programacion,frameworks y
+            estrategias de búsqueda, me apasiona mi profesion y el trabajo
+            remoto, siempre motivado a contribuir al crecimiento y la innovación
+            de mis clientes
+          </p>
+        </div>
+      </section>
+      <section id="Estudios" class="sections">
+        <h2
+          id="Title"
+          class="text-3xl mb-12 text-center relative pb-4 title-decoration"
+        >
+          Estudios y Cursos
+        </h2>
+        <div id="timeline" class="relative max-w-[800px] m-0 timeline">
+          <div
+            id="timeline content"
+            class="relative mb-12 pl-10 timeline-circle"
+          >
+            <div
+              class="experience-cards"
+              data-aos="flip-right"
+              data-aos-duration="2000"
+            >
+              <span
+                id="Date"
+                class="relative hover-link text-sm font-semibold mb-2 hover-link inline-block p-1.5 bg-primario/10 text-primario/80 rounded-[5px]"
+                >2009-2015</span
+              >
+              <h3 class="text-graytext mb-1 text-base font-medium">
+                Unidad educativa Dr.Rafael Lopez Baralt
+              </h3>
+              <h4 class="">Educacion primaria</h4>
+            </div>
+          </div>
+          <div
+            id="timeline content"
+            class="relative mb-12 pl-12 timeline-circle"
+          >
+            <div
+              class="experience-cards"
+              data-aos="flip-right"
+              data-aos-duration="2000"
+            >
+              <span
+                id="Date"
+                class="relative text-sm font-semibold mb-2 hover-link inline-block p-1.5 bg-primario/10 text-primario/80 rounded-[5px]"
+                >2015-2019</span
+              >
+              <h3 class="text-graytext mb-1 text-base font-medium">
+                Unidad educativa Miguel Servet
+              </h3>
+              <h4>Educacion Secundaria</h4>
+            </div>
+          </div>
+          <div
+            id="timeline content"
+            class="relative mb-12 pl-12 timeline-circle"
+          >
+            <div
+              class="experience-cards"
+              data-aos="flip-left"
+              data-aos-duration="2000"
+            >
+              <span
+                id="Date"
+                class="relative hover-link text-sm font-semibold mb-2 hover-link inline-block p-1.5 bg-primario/10 text-primario/80 rounded-[5px]"
+                >2025</span
+              >
+              <h3 class="text-graytext mb-1 text-base font-medium">
+                Lexpin Online
+              </h3>
+              <h4>Programacion web FullStack</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experiencia" class="sections">
+        <h2
+          id="Title"
+          class="text-3xl mb-12 text-center relative pb-4 title-decoration"
+        >
+          Experiencia Laboral
+        </h2>
+        <div id="timeline" class="relative max-w-[800px] m-0 timeline">
+          <div
+            id="timeline content"
+            class="relative mb-12 pl-12 timeline-circle"
+          >
+            <div
+              class="experience-cards"
+              data-aos-duration="2000"
+              data-aos="fade-down-left"
+            >
+              <span
+                id="Date"
+                class="relative hover-link text-sm font-semibold mb-4 hover-link inline-block p-1.5 bg-primario/10 text-primario/80 rounded-[5px]"
+                >2024-Actualidad</span
+              >
+              <h3 class="mb-2 text-lg font-semibold">
+                Desarrollador Front-End
+              </h3>
+              <h4 class="text-graytext mb-4 text-base font-medium">
+                Empresa tecnologica S.A.
+              </h4>
+              <p class="font-semibold">
+                Desarrollo de paginas atractivas utilizando los lenguajes de
+                Html, Css, Sass y Frameworks como Tailwind
+              </p>
+              <ul id="skills" class="flex flex-wrap gap-3 mt-3.5">
+                <li
+                  class="tech border-2 border-primario border-solid hover-cards"
+                >
+                  HTML5
+                </li>
+                <li
+                  class="tech border-2 border-primario border-solid hover-cards"
+                >
+                  CSS3
+                </li>
+                <li
+                  class="tech border-2 border-primario border-solid hover-cards"
+                >
+                  Taildwind CSS
+                </li>
+                <li
+                  class="tech border-2 border-primario border-solid hover-cards"
+                >
+                  SASS
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="Services"
+        class="sections"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+      >
+        <h2 class="text-3xl mb-12 text-center relative pb-4 title-decoration">
+          Servicios
+        </h2>
+        <div
+          id="service-Container"
+          class="grid grid-cols-3 gap-8 max-md:flex-col max-md:flex"
+        >
+          <div
+            id="service-card"
+            class="bg-cardbg rounded-[10px] overflow-hidden hover-cards h-full flex flex-col border-2 border-primario border-solid"
+          >
+            <div
+              id="service-img"
+              class="block max-w-full h-auto overflow-hidden border-2 border-primario border-solid"
+            >
+              <img
+                class="transition hover:scale-[105%] hover:transform-gpu border-2"
+                src="assets/interfaz.jpg"
+                alt="service-image"
+              />
+            </div>
+            <div id="service-info" class="mb-4 mt-3 text-sm flex-grow-1">
+              <h3
+                class="mb-3.5 text-xl font-semibold hover:text-primario transition"
+              >
+                diseño construcción de interfaz (Front-End)
+              </h3>
+              <p class="text-graytext mb-4 text-sm flex-grow-1 font-semibold">
+                Creación de sitios web y aplicaciones web con interfaces
+                atractivas, intuitivas y fáciles de usar.
+              </p>
+            </div>
+          </div>
+          <div
+            id="service-card"
+            class="bg-cardbg rounded-[10px] overflow-hidden hover-cards h-full flex flex-col border-2 border-primario border-solid"
+          >
+            <div
+              id="service-img"
+              class="block max-w-full h-auto overflow-hidden border-2 border-primario border-solid"
+            >
+              <img
+                class="transition hover:scale-[105%] hover:transform-gpu"
+                src="assets/interactivo.jpg"
+                alt="service-image"
+              />
+            </div>
+            <div id="service-info" class="mb-4 mt-3 text-sm flex-grow-1">
+              <h3
+                class="mb-3.5 text-xl font-semibold hover:text-primario transition"
+              >
+                Desarrollo de componentes interactivos (Front-End)
+              </h3>
+              <p class="text-graytext mb-4 text-sm flex-grow-1 font-semibold">
+                Uso de lenguajes como HTML, CSS y JavaScript para desarrollar
+                elementos visuales y funcionales con los que los usuarios
+                interactúan.
+              </p>
+            </div>
+          </div>
+          <div
+            id="service-card"
+            class="bg-cardbg rounded-[10px] overflow-hidden hover-cards h-full flex flex-col border-2 border-primario border-solid"
+          >
+            <div
+              id="service-img"
+              class="block max-w-full h-auto overflow-hidden border-2 border-primario border-solid"
+            >
+              <img
+                class="transition hover:scale-[105%] hover:transform-gpu"
+                src="assets/moviles.jpg"
+                alt="service-image"
+              />
+            </div>
+            <div id="service-info" class="mb-4 mt-3 text-sm flex-grow-1">
+              <h3
+                class="mb-3.5 text-xl font-semibold hover:text-primario transition"
+              >
+                Optimización para móviles (Front-End)
+              </h3>
+              <p class="text-graytext mb-4 text-sm flex-grow-1 font-semibold">
+                Asegurar que el sitio web o aplicación sea completamente
+                responsive y funcione bien en cualquier dispositivo.
+              </p>
+            </div>
+          </div>
+          <div
+            id="service-card"
+            class="bg-cardbg rounded-[10px] overflow-hidden hover-cards h-full flex flex-col border-2 border-primario border-solid"
+          >
+            <div
+              id="service-img"
+              class="block max-w-full h-auto overflow-hidden border-2 border-primario border-solid"
+            >
+              <img
+                class="transition hover:scale-[105%] hover:transform-gpu"
+                src="assets/logica.jpg"
+                alt="service-image"
+              />
+            </div>
+            <div id="service-info" class="mb-4 mt-3 text-sm flex-grow-1">
+              <h3
+                class="mb-3.5 text-xl font-semibold hover:text-primario transition"
+              >
+                Desarrollo de la lógica de negocio (Back-End)
+              </h3>
+              <p class="text-graytext mb-4 text-sm flex-grow-1 font-semibold">
+                Escribir código eficiente para el servidor, gestionando
+                funciones complejas y la lógica de las aplicaciones.
+              </p>
+            </div>
+          </div>
+          <div
+            id="service-card"
+            class="bg-cardbg rounded-[10px] overflow-hidden hover-cards h-full flex flex-col border-2 border-primario border-solid"
+          >
+            <div
+              id="service-img"
+              class="block max-w-full h-auto overflow-hidden border-2 border-primario border-solid"
+            >
+              <img
+                class="transition hover:scale-[105%] hover:transform-gpu"
+                src="assets/datos.jpg"
+                alt="service-image"
+              />
+            </div>
+            <div id="service-info" class="mb-4 mt-3 text-sm flex-grow-1">
+              <h3
+                class="mb-3.5 text-xl font-semibold hover:text-primario transition"
+              >
+                Creación y gestión de bases de datos (Back-End)
+              </h3>
+              <p class="text-graytext mb-4 text-sm flex-grow-1 font-semibold">
+                Diseñar, implementar y administrar bases de datos relacionales
+                (SQL) y no relacionales (NoSQL) para almacenar y acceder a los
+                datos de la aplicación.
+              </p>
+            </div>
+          </div>
+          <div
+            id="service-card"
+            class="bg-cardbg rounded-[10px] overflow-hidden hover-cards h-full flex flex-col border-2 border-primario border-solid"
+          >
+            <div
+              id="service-img"
+              class="block max-w-full h-auto overflow-hidden border-2 border-primario border-solid"
+            >
+              <img
+                class="transition hover:scale-[105%] hover:transform-gpu"
+                src="assets/Api.jpg"
+                alt="service-image"
+              />
+            </div>
+            <div id="service-info" class="mb-4 mt-3 text-sm flex-grow-1">
+              <h3
+                class="mb-3.5 text-xl font-semibold hover:text-primario transition"
+              >
+                Desarrollo de APIs (Back-End)
+              </h3>
+              <p class="text-graytext mb-4 text-sm flex-grow-1 font-semibold">
+                Crear interfaces de programación de aplicaciones que permitan la
+                comunicación entre el front-end y el back-end, o con servicios
+                externos.
+              </p>
+            </div>
+          </div>
+          <div
+            id="service-card"
+            class="bg-cardbg rounded-[10px] overflow-hidden hover-cards h-full flex flex-col border-2 border-primario border-solid"
+          >
+            <div
+              id="service-img"
+              class="block max-w-full h-auto overflow-hidden border-2 border-primario border-solid"
+            >
+              <img
+                class="transition hover:scale-[105%] hover:transform-gpu"
+                src="assets/colaboracion.jpg"
+                alt="service-image"
+              />
+            </div>
+            <div id="service-info" class="mb-4 mt-3 text-sm flex-grow-1">
+              <h3
+                class="mb-3.5 text-xl font-semibold hover:text-primario transition"
+              >
+                Colaboración interfuncional (Arquitectura y operaciones)
+              </h3>
+              <p class="text-graytext mb-4 text-sm flex-grow-1 font-semibold">
+                Trabajar con diseñadores, otros desarrolladores y expertos en
+                ciberseguridad para asegurar la entrega exitosa del proyecto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="sections">
+        <h2 class="text-3xl mb-12 text-center relative pb-4 title-decoration">
+          Proyectos Personales
+        </h2>
+        <div
+          id="Project-Container"
+          class="grid grid-cols-3 gap-8 max-md:flex-col max-md:flex"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+        >
+          <div
+            id="Project-card"
+            class="bg-cardbg rounded-[10px] overflow-hidden hover-cards h-full flex flex-col border-2 border-primario border-solid"
+          >
+            <div
+              id="Project-img"
+              class="block max-w-full h-auto overflow-hidden"
+            >
+              <img
+                class="transition hover:scale-[105%] hover:transform-gpu"
+                src="assets/Youtube.jpg"
+                alt="Project-image"
+              />
+            </div>
+            <div id="Project-info" class="mb-4 mt-3 text-sm flex-grow-1">
+              <h3
+                class="mb-3.5 text-xl font-semibold hover:text-primario transition"
+              >
+                Copia Mirror de Youtube
+              </h3>
+              <p class="text-graytext mb-4 text-sm flex-grow-1 font-semibold">
+                Copia creada para probar habilidades en lenguajes como HTML Y
+                CSS
+              </p>
+            </div>
+            <div id="Project-Tech" class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="tech border-2 border-primario border-solid hover-cards"
+                >HTML5</span
+              >
+              <span
+                class="tech border-2 border-primario border-solid hover-cards"
+                >CSS</span
+              >
+            </div>
+            <div
+              class="text-graytext font-bold transition hover:text-primario"
+              id="Project-Links"
+            >
+              <a href="assets/Yt/YT-Copy.html" target="_blank"
+                ><i class="fas fa-link"></i>Demo</a
+              >
+            </div>
+          </div>
+          <div
+            id="Project-card"
+            class="bg-cardbg rounded-[10px] overflow-hidden hover-cards h-full flex flex-col border-2 border-primario border-solid"
+          >
+            <div
+              id="Project-img"
+              class="block max-w-full h-auto overflow-hidden"
+            >
+              <img
+                class="transition hover:scale-[105%] hover:transform-gpu"
+                src="assets/Spotify.jpg"
+                alt="Project-image"
+              />
+            </div>
+            <div id="Project-info" class="mb-4 mt-3 text-sm flex-grow-1">
+              <h3
+                class="mb-3.5 text-xl font-semibold hover:text-primario transition"
+              >
+                Copia Mirror de Spotify (En proceso)
+              </h3>
+              <p class="text-graytext mb-4 text-sm flex-grow-1 font-semibold">
+                Copia creada para probar habilidades en lenguajes como HTML Y
+                SASS
+              </p>
+            </div>
+            <div id="Project-Tech" class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="tech border-2 border-primario border-solid hover-cards"
+                >HTML5</span
+              >
+              <span
+                class="tech border-2 border-primario border-solid hover-cards"
+                >SASS</span
+              >
+            </div>
+            <div id="Project-Links">
+              <a
+                class="text-graytext font-bold transition hover:text-primario"
+                href="assets/Spotify/SpotifyCopy.html"
+                target="_blank"
+                ><i class="fas fa-link"></i>Demo</a
+              >
+            </div>
+          </div>
+          <div
+            id="Project-card"
+            class="bg-cardbg rounded-[10px] overflow-hidden hover-cards h-full flex flex-col border-2 border-primario border-solid"
+          >
+            <div
+              id="Project-img"
+              class="block max-w-full h-auto overflow-hidden"
+            >
+              <img
+                class="transition hover:scale-[105%] hover:transform-gpu"
+                src="assets/portafolio.png"
+                alt="Project-image"
+              />
+            </div>
+            <div id="Project-info" class="mb-4 mt-3 text-sm flex-grow-1">
+              <h3
+                class="mb-3.5 text-xl font-semibold hover:text-primario transition"
+              >
+                Portafolio Personal
+              </h3>
+              <p class="text-graytext mb-4 text-sm flex-grow-1 font-semibold">
+                Portafolio personal creado para mostrar habilidades e
+                informacion profesional
+              </p>
+            </div>
+            <div id="Project-Tech" class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="tech border-2 border-primario border-solid hover-cards"
+                >HTML5</span
+              >
+              <span
+                class="tech border-2 border-primario border-solid hover-cards"
+                >CSS</span
+              >
+              <span
+                class="tech border-2 border-primario border-solid hover-cards"
+                >TailWind</span
+              >
+            </div>
+            <div id="Project-Links">
+              <a
+                class="text-graytext font-bold transition hover:text-primario"
+                href="assets/Portafolio tailwind - copia/Index.html"
+                target="_blank"
+                ><i class="fas fa-link"></i>Demo</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-darkerbg border-t-1 border-solid border-bordercolor py-8 px-[5%]"
+    >
+      <section
+        id="Footer-Content"
+        class="flex content-between items-center max-w-[1400px] my-0 mx-[auto] gap-4 "
+      >
+        <p>&copy; 2025 Maurcio Lopez-Todos los derechos reservados</p>
+        <div id="social-links" class="flex gap-4 ">
+          <a href="a" target="_blank" class="hover-socials"><i class="fab fa-github"></i></a>
+          <a href="a" target="_blank" class="hover-socials"><i class="fab fa-instagram"></i></a>
+          <a href="a" target="_blank" class="hover-socials"><i class="fab fa-x"></i></a>
+          <a href="a" target="_blank" class="hover-socials"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
